@@ -14,7 +14,7 @@ class ContactForm extends Component{
             data: {
                 name: name,   
                 email: email,  
-                messsage: message
+                message: message
             }
         }).then((response)=>{
             if (response.data.msg === 'success'){
@@ -44,7 +44,7 @@ class ContactForm extends Component{
                     </div>
                     <div className="form-group">
                         <label for="message">Message</label>
-                        <textarea className="form-control" rows="5" id="message"></textarea>
+                        <textarea className="form-control" input="true" rows="5" id="message"></textarea>
                     </div>
                     <button type="submit" className="btn btn-primary">Submit</button>
                 </form>
